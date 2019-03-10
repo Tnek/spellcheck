@@ -1,3 +1,5 @@
+
+# Basic Setup
 To run:
 
 
@@ -21,3 +23,15 @@ python app.py
 
 
 It'll be listening by default on http://127.0.0.1:5000
+
+
+# Using Dockerfile
+
+```
+$ docker build . -t spellcheckerapp
+$ docker run -d -p 1234:5000 spellcheckerapp
+```
+
+It'll be listening on http://127.0.0.1:1234 
+
+
