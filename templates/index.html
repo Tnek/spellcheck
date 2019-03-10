@@ -21,9 +21,9 @@
         <ul>
         {% for i in corrections %}
         {% if i == corrections[i] %}
-            <li>'{{ i }}' is an unknown word. There are no matching spellings of that word.</li>
+        <li><b>'{{ i }}'</b> is an unknown word. There are no matching spellings of that word.</li>
         {% else %}
-            <li>'{{ i }}' is an unknown word: did you mean '{{ corrections[i] }}'?</li>
+        <li><b>'{{ i }}'</b> is an unknown word: did you mean <b>'{{ corrections[i] }}'</b>?</li>
         {% endif %}
         {% endfor %}
         </ul>
